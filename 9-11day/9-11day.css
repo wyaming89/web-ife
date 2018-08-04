@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .begin {
     width: 100%;
@@ -65,7 +66,7 @@ form {
 }
 .content {
     width: 100%;
-    height: 350px;
+    height: 400px;
 }
 .content h1 {
     font-size: 10px;
@@ -193,48 +194,157 @@ form {
 .dcontent {
     text-align: center;
     padding-top: 20px;
+    margin: 0 auto;
+    width: 680px;
 }
 .teacher {
     width: 960px;
     height: 800px;
     position: relative;
     margin: 0 auto;
+    padding-top: ;
 
 }
 .teacher1 {
     position: absolute;
-    top: 0;
+    top: 30px;
     left: 0;
+    z-index: 2;
 }
 .teacher2 {
     position: absolute;
-    top: 0;
+    top: 30px;
     right: 0;
 }
 .teacher3 {
     position: absolute;
-    bottom: 0;
+    bottom: 60px;
     left: 0;
 }
 .teacher4 {
     position: absolute;
-    bottom: 0;
+    bottom: 60px;
     right: 0;
 }
 .intorduce {
-    width: 400px;
-    height: 400px;
+    width: 472px;
+    height: 341px;
     position: absolute;
     top: 0;
     left: 0;
-    background-color: hsl(200,30%,20%);
+    text-align: center;
+    padding-top: 100px;
+    color: #dddddd;
+    z-index: 1;
+    opacity: 0;
+    background-color: rgba(0,0,0, .65);
+}
+.intorduce h1 {
+    font-size: 20px;
+}
+.intorduce span {
+    font-size: 10px;
 }
 .pics {
     margin: 0 auto;
-    width: 100px;
     display: flex;
+    align-items: center;
+    padding-left: 150px;
+    padding-top: 20px;
+}
+.intorduce:hover {
+    opacity: 1;
 }
 .pics img {
     padding-top: 30px;
     padding-right: 20px;
+}
+.contacts {
+    width: 960px;
+    height: 700px;
+    margin: 0 auto;
+}
+#contactform {
+    width: 470px;
+    height: 500px;
+    border: 1px solid #7C7C7C;
+    float: left;
+    margin-right: 100px;
+    margin-top: 50px;
+    padding-top: 30px;
+    text-align: center;
+}
+#contactform input {
+    width: 300px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 30px;
+    padding-left: 10px;
+}
+#contactform textarea {
+    width: 300px;
+    height: 100px;
+    margin-top: 30px;
+    margin-left: 30px;
+    padding-left: 10px;
+}
+#contactform button {
+    width: 300px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 30px;
+    background-color: #030303;
+    color: #dddddd;
+}
+.contactus {
+    padding-top: 150px;
+}
+.contactus ul {
+    padding-top: 30px;
+    list-style-type: none;
+    line-height: 50px;
+}
+.contactus img {
+    margin-right: 10px;
+}
+.footer {
+    width: 100%;
+    height: 300px;
+    background-color: #030303;
+    color: #eeeeee;
+    display: flex;
+    margin: 0;
+    padding-top: 50px;
+}
+.footer ul {
+    list-style-type: none;
+    margin-left: 150px;
+    line-height: 40px;
+}
+.footer a {
+    text-decoration: none;
+    color: #7C7C7C;
+    font-size: 10px;
+}
+.footer h1 {
+    font-size: 20px;
+    color: #dddddd;
+}
+.support1 {
+    margin-right: 50px;
+}
+.enjoy p {
+    font-size: 10px;
+    color: #7C7C7C;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.enjoy li {
+    list-style-type: none;
+    float: left;
+    margin-right: 10px;
+}
+.enjoy ul {
+    float: left;
+    margin: 0;
 }
